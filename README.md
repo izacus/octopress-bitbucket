@@ -15,10 +15,12 @@ default_asides: [ ..., asides/bitbucket.html, ...]
 
 bitbucket_user: <username>
 bitbucket_show_profile_link: true
+bitbucket_repo_show_count: 5		# Number of repositories to show
+bitbucket_repo_load_count: 50		# Number of repositories to load
 bitbucket_skip_forks: true
 ```
 
-That's it. Note that repo output is limited to a single API page right now.
+That's it. Note that Bitbucket API does not support sorting, so all your repositories must be loaded for sorting to work properly.
 
 
 License
