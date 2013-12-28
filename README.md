@@ -11,6 +11,8 @@ Installation
 3. Add bitbucket configuration parameters to your `_config.yml` file:
 
 ```
+default_asides: [ ..., asides/bitbucket.html, ...]
+
 bitbucket_user: <username>
 bitbucket_show_profile_link: true
 bitbucket_skip_forks: true
