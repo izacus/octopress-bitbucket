@@ -6,7 +6,7 @@ var bitbucket = (function(){
     var i = 0, fragment = '', t = $(target)[0];
 
     for(i = 0; i < repos.length; i++) {
-      fragment += '<li><a href="'+repos[i].links.html.href+'">'+repos[i].name+'</a><p>'+escapeHtml(repos[i].description||'')+'</p></li>';
+      fragment += '<a class="list-group-item" href="'+repos[i].links.html.href+'"><h4 class="list-group-item-heading">'+repos[i].name+'</h4><p>'+escapeHtml(repos[i].description||'')+'</p></a>';
     }
     t.innerHTML = fragment;
   }
