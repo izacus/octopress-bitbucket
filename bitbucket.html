@@ -1,11 +1,15 @@
 {% if site.bitbucket_user %}
-<section>
-  <h1>BitBucket Repos</h1>
-  <ul id="bb_repos">
-    <li class="loading">Status updating...</li>
-  </ul>
+<section class="panel panel-default clearfix">
+  <div class="panel-heading">
+    <h3 class="panel-title">BitBucket Repos</h3>
+  </div>
+  <div class="list-group" id="bb_repos">
+    <p class="loading">Status updating…</p>
+  </div>
   {% if site.bitbucket_show_profile_link %}
-  <a href="https://bitbucket.org/{{site.bitbucket_user}}">@{{site.bitbucket_user}}</a> on BitBucket
+    <div class="gh-profile-link pull-right text-muted">
+      <a href="https://bitbucket.org/{{site.bitbucket_user}}">@{{site.bitbucket_user}}</a> on BitBucket
+    </div>
   {% endif %}
   <script type="text/javascript">
     $(document).ready(function(){
